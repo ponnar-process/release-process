@@ -9,3 +9,12 @@ whenever there is new release, this is the process followed. ticket will go to r
 6. Release plan in excel is circulated by manager.  if any steps to be modified we can provide our comments.
 7. during release day - scrum master or manager drives the release. 
 8. QA team - gives sign off
+
+
+# realease - yyy project
+1. svn dev branch - for development in local and trunk dev
+  when we done with features complete, we create a branch say xxx10.x etc
+  this xxx10.x branch is points to stage and production.
+  we use go-pipeline for CI/CD. shen we commit code dev branch pipelines are automatically built.
+  for deploy we manually tigger.
+2. when production, we trigger stage and production pipeline for build and deployment
